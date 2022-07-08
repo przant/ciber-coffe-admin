@@ -70,3 +70,9 @@ group :development do
   # gem "spring"
 end
 
+group :test do
+    gem 'capybara', '~> 3.37', '>= 3.37.1'
+    gem 'cuprite', '~> 0.13'
+    gem 'selenium-webdriver', '~> 4.3'
+    # gem 'webdrivers', '~> 5.0'
+end
