@@ -12,15 +12,24 @@
 
   <body>
     <div class="container-fluid">
+      
       <header class="row">
+        <div class="col m-0 p-0">
           <%= render 'partials/navbar' %>
           <%= render 'partials/notice_alerts' %>
+        </div>
       </header>
-      <main class="row">
-        <%= yield %>
-      </main>
+      
+      <section class="main-container row align-items-center">
+        <main class="col bg-white">
+          <%= yield %>
+        </main>
+      </section>
+
       <footer class="row">
-        <%= render 'partials/footer' %>
+        <div class="col bg-dark text-white p-2">
+          <%= render 'partials/footer' %>
+        </div>
       </footer>
     </div>
   </body>

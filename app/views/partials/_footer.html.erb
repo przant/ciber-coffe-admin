@@ -1,17 +1,11 @@
-<footer class="bg-dark text-white position-absolute bottom-0 p-2">
-    <div class="row">
-        <div class="col ">
-            <div class="row text-center">
-                <p><strong> &copy; <%= link_to 'przant', 'https://www.github.com/przant', class: 'text-white text-decoration-none' %> 2022-07</strong></p>
-            </div>
-            <div class="row text-center">
-                <span>
-                    Powered by<br>
-                    <%= link_to 'https://rubyonrails.org/' do %>
-                        <%= image_tag 'rails-logo.png', class: 'rounded-circle', size: '64x64' %>
-                    <% end %>
-                </span>
-            </div>
-        </div>
-    </div>
-</footer>
+<div class="row text-center">
+    <p><strong> &copy; <%= link_to 'przant', 'https://www.github.com/przant', class: 'text-white text-decoration-none' %> 2022-07</strong></p>
+</div>
+<div class="row text-center">
+    <span>
+        Powered by<br>
+        <%= link_to 'https://rubyonrails.org/' do %>
+            <%= image_tag 'rails-logo.png', class: 'rounded-circle', size: '64x64' %>
+        <% end %>
+    </span>
+</div>
