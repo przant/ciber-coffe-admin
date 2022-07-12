@@ -18,14 +18,17 @@
       </ul>
         <% if user_signed_in? %>
           <span class="navbar-text">
+              <%= link_to current_user.email, edit_user_registration_path, class: 'nav-link' %>
+          </span>
+          <span class="navbar-text">
               <a class="nav-link" href="#">Logout</a>
-        </span>
+          </span>
         <% else %>
             <span class="navbar-text">
-                <%= link_to 'Log in', new_user_session_path, class: 'nav-link fw-bold' %>
+                <%= link_to 'Login', new_user_session_path, class: 'nav-link fw-bold' %>
             </span>
             <span class="navbar-text">
-                <%= link_to 'Sign up', new_user_registration_path, class: 'nav-link fw-bold' %>
+                <%= link_to 'Sign-up', new_user_registration_path, class: 'nav-link fw-bold' %>
             </span>
         <% end %>
     </div>
