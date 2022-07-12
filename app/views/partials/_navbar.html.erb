@@ -21,7 +21,7 @@
               <%= link_to current_user.email, edit_user_registration_path, class: 'nav-link' %>
           </span>
           <span class="navbar-text">
-              <a class="nav-link" href="#">Logout</a>
+              <%= button_to 'Logout', destroy_user_session_path, method: :delete, class: 'btn btn-link text-white fw-bold text-decoration-none' %>
           </span>
         <% else %>
             <span class="navbar-text">
