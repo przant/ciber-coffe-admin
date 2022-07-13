@@ -15,7 +15,9 @@
       
       <header class="row">
         <div class="col m-0 p-0">
-          <%= render 'partials/navbar' %>
+          <% unless action_name == 'new' && ( controller_name == 'sessions' || controller_name == 'registrations') %>          
+            <%= render 'partials/navbar' %>
+          <% end %>
           <%= render 'partials/notice_alerts' %>
         </div>
       </header>
